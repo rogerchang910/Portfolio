@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roger Chang | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">Roger Chang</div>
+
+    <nav class="nav" aria-label="主選單">
+      <button class="tab-btn active" data-tab="about">About</button>
+      <button class="tab-btn" data-tab="projects">Projects</button>
+    </nav>
+
+    <div class="toolbar">
+      <button id="search-toggle" class="icon-btn" aria-label="搜尋">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M10.5 3a7.5 7.5 0 015.96 12.06l4.24 4.24a1 1 0 11-1.41 1.41l-4.24-4.24A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" />
+        </svg>
+      </button>
+
+      <button id="theme-toggle" class="icon-btn" aria-label="切換深色模式" title="切換深色模式">
+        <svg id="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1111.2 3a1 1 0 01.66 1.75A7 7 0 0019.25 12a1 1 0 011.75.8z" />
+        </svg>
+        <svg id="icon-sun" viewBox="0 0 24 24" aria-hidden="true" class="hidden">
+          <path
+            d="M12 4a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm0 16a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm8-8a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zM4 12a1 1 0 011-1h0a1 1 0 010 2h0a1 1 0 01-1-1zm13.66-6.66a1 1 0 011.41 0h0a1 1 0 01-1.41 1.41h0a1 1 0 010-1.41zM4.93 19.07a1 1 0 011.41 0h0a1 1 0 01-1.41 1.41h0a1 1 0 010-1.41zM19.07 19.07a1 1 0 010 1.41h0a1 1 0 01-1.41-1.41h0a1 1 0 011.41 0zM6.34 4.93a1 1 0 010 1.41h0A1 1 0 014.93 4.93h0a1 1 0 011.41 0zM12 7a5 5 0 110 10 5 5 0 010-10z" />
+        </svg>
+      </button>
+
+      <input id="search-input" type="search" placeholder="Search..." aria-label="搜尋內容" />
+    </div>
+  </header>
+
+  <main>
+    <section id="about-panel" class="tab-panel active">
+      <section class="hero" data-search="roger chang about profile 自介">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="profile-column">
+            <img src="assets/profile.jpg" onerror="this.onerror=null;this.src='assets/profile-placeholder.svg';"
+              alt="Roger Chang 個人照片" class="avatar" />
+            <h1>Roger Chang</h1>
+            <p class="role">Data Science | AI Applications</p>
+          </div>
+          <div class="intro-column">
+            <h2 class="about-title">About Me</h2>
+            <p class="intro">
+              Data Scientist and AI practitioner with over three years of experience applying data-driven approaches
+              to solve complex, real-world problems. I combine quantitative analysis, computational modeling,
+              simulation, and artificial intelligence to design solutions that are both technically rigorous and
+              practically impactful.
+              My interdisciplinary perspective enables me to bridge the gap between theoretical frameworks and
+              real-world implementation.
+            </p>
+
+            <div class="about-meta">
+              <section class="about-block">
+                <h3>Interests</h3>
+                <ul>
+                  <li>Data analysis &amp; visualization</li>
+                  <li>AI applications</li>
+                  <li>Music</li>
+                  <li>Traveling</li>
+                </ul>
+              </section>
+
+              <section class="about-block">
+                <h3>Education</h3>
+                <ul class="about-edu-list">
+                  <li>
+                    <span class="about-edu-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M12 3L2 8l10 5 8-4v5h2V8L12 3zm-6 8.8V15c0 2.4 3.6 4 6 4s6-1.6 6-4v-3.2l-6 3-6-3z" />
+                      </svg>
+                    </span>
+                    <span>
+                      MEng in Biomedical Engineering
+                      <span class="school-line">Duke University</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="about-edu-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M12 3L2 8l10 5 8-4v5h2V8L12 3zm-6 8.8V15c0 2.4 3.6 4 6 4s6-1.6 6-4v-3.2l-6 3-6-3z" />
+                      </svg>
+                    </span>
+                    <span>
+                      BS in Material Science and Engineering
+                      <span class="school-line">National Taiwan University of Science and Technology</span>
+                    </span>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" data-search="work experience data scientist city science lab">
+        <div class="container">
+          <h2 class="section-title">Work Experience</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-icon work-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M9 4a3 3 0 00-3 3v1H4a2 2 0 00-2 2v8a3 3 0 003 3h14a3 3 0 003-3v-8a2 2 0 00-2-2h-2V7a3 3 0 00-3-3H9zm1 4V7a1 1 0 011-1h2a1 1 0 011 1v1h-4zm-6 4h16v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z" />
+                </svg>
+              </span>
+              <h3>Data Scientist</h3>
+              <p class="company">City Science Lab @ Taipei Tech (Collaboration with MIT Media Lab)</p>
+              <p class="period">Full-time, Jan 2024 - now</p>
+              <ul>
+                <li>Designed and developed LLM-driven simulation systems with probabilistic algorithms for realistic
+                  synthetic behavioral data.</li>
+                <li>Owned matching and allocation logic, improving diversity and realism of generated outcomes.</li>
+                <li>Built evaluation and validation frameworks, improving overall system performance by approximately
+                  20%.</li>
+                <li>Developed natural-language query mechanism and multi-tool AI agent workflow with MCP-based
+                  orchestration.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" data-search="publications cupum doi semantic clustering llm mobility simulation">
+        <div class="container">
+          <h2 class="section-title">Publications</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-icon pub-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 3a3 3 0 00-3 3v12a3 3 0 003 3h10a3 3 0 003-3V8l-5-5H7zm8 1.5L18.5 8H15V4.5zM8 11h8v1.8H8V11zm0 3.8h8v1.8H8v-1.8z" />
+                </svg>
+              </span>
+              <h3>
+                <a href="https://osf.io/abyqh/files/yedh6" target="_blank" rel="noopener noreferrer">
+                  Semantic clustering and visualization of citizen reports for enhanced urban decision-making
+                </a>
+              </h3>
+              <p class="company">Chang, Y. (2025)</p>
+              <p class="period">CUPUM 2025. DOI: 10.17605/OSF.IO/ABYQH</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-icon pub-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M7 3a3 3 0 00-3 3v12a3 3 0 003 3h10a3 3 0 003-3V8l-5-5H7zm8 1.5L18.5 8H15V4.5zM8 11h8v1.8H8V11zm0 3.8h8v1.8H8v-1.8z" />
+                </svg>
+              </span>
+              <h3>
+                <a href="https://osf.io/abyqh/files/v4dzb" target="_blank" rel="noopener noreferrer">
+                  Incorporating LLMs for large-scale urban complex mobility simulation
+                </a>
+              </h3>
+              <p class="company">Song, Y., Tsern, C., Wu, C., &amp; Chang, Y. (2025)</p>
+              <p class="period">CUPUM 2025. DOI: 10.17605/OSF.IO/ABYQH</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" data-search="activities speaker presenter participant devdays cupum ucl city science summit andorra">
+        <div class="container">
+          <h2 class="section-title">Activities</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-icon act-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 3a3 3 0 00-3 3v5a3 3 0 006 0V6a3 3 0 00-3-3zm-5 8a1 1 0 011 1 4 4 0 008 0 1 1 0 112 0 6 6 0 01-5 5.91V21h2a1 1 0 110 2H9a1 1 0 110-2h2v-3.09A6 6 0 016 12a1 1 0 011-1z" />
+                </svg>
+              </span>
+              <h3>Speaker</h3>
+              <p class="company">Microsoft DevDays Asia 2025</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-icon act-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 3a3 3 0 00-3 3v5a3 3 0 006 0V6a3 3 0 00-3-3zm-5 8a1 1 0 011 1 4 4 0 008 0 1 1 0 112 0 6 6 0 01-5 5.91V21h2a1 1 0 110 2H9a1 1 0 110-2h2v-3.09A6 6 0 016 12a1 1 0 011-1z" />
+                </svg>
+              </span>
+              <h3>Presenter</h3>
+              <p class="company">CUPUM Conference 2025, University College London (UCL)</p>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-icon act-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 3a3 3 0 00-3 3v5a3 3 0 006 0V6a3 3 0 00-3-3zm-5 8a1 1 0 011 1 4 4 0 008 0 1 1 0 112 0 6 6 0 01-5 5.91V21h2a1 1 0 110 2H9a1 1 0 110-2h2v-3.09A6 6 0 016 12a1 1 0 011-1z" />
+                </svg>
+              </span>
+              <h3>Participant</h3>
+              <p class="company">City Science Summit 2024, Andorra, organized by MIT Media Lab</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" data-search="education duke biomedical engineering data science certificate">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-icon edu-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 3L2 8l10 5 8-4v5h2V8L12 3zm-6 8.8V15c0 2.4 3.6 4 6 4s6-1.6 6-4v-3.2l-6 3-6-3z" />
+                </svg>
+              </span>
+              <h3>MEng in Biomedical Engineering</h3>
+              <p class="company">Duke University, NC, US</p>
+              <p class="period">August 2021 - May 2023</p>
+              <ul>
+                <li>Completed with a Data Science Certificate.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-icon edu-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 3L2 8l10 5 8-4v5h2V8L12 3zm-6 8.8V15c0 2.4 3.6 4 6 4s6-1.6 6-4v-3.2l-6 3-6-3z" />
+                </svg>
+              </span>
+              <h3>BS in Materials Science and Engineering</h3>
+              <p class="company">National Taiwan University of Science and Technology, Taipei, Taiwan</p>
+              <p class="period">September 2015 - June 2019</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="projects-panel" class="tab-panel">
+      <section class="content-section">
+        <div class="container">
+          <h2 class="section-title projects-title">Projects</h2>
+          <div class="project-filter-bar" aria-label="Project tag filters">
+            <button class="project-filter-btn" type="button" data-tag="AI & LLM">AI &amp; LLM</button>
+            <button class="project-filter-btn" type="button" data-tag="simulation">Simulation</button>
+            <button class="project-filter-btn" type="button" data-tag="visualization">Visualization</button>
+            <button class="project-filter-btn" type="button" data-tag="AI agents">AI agents</button>
+            <button class="project-filter-btn" type="button" data-tag="Data">Data</button>
+          </div>
+          <div class="project-grid">
+            <article class="project-card"
+              data-search="cityai ai llm ai agents data sep 2025 spatio-temporal database multi-agent system"
+              data-tags="AI & LLM,AI agents,Data">
+              <a class="project-cover-link" href="https://www.csltaipeitech.com/en/project/cityai-t-ai-1-rrnj3"
+                target="_blank" rel="noopener noreferrer" aria-label="Open CityAI project in a new tab">
+                <img class="project-cover" src="assets/projects/cityai-placeholder.png"
+                  alt="CityAI project cover placeholder" />
+              </a>
+              <p class="project-tags">AI &amp; LLM · AI agents · Data</p>
+              <h3>CityAI</h3>
+              <p class="project-desc">
+                Integrates Large Language Models (LLMs), a Multi-Agent System, and a Spatio-Temporal Database to
+                help the public explore urban issues through natural language.
+              </p>
+              <p class="project-time">Sep, 2025</p>
+            </article>
+
+            <article class="project-card" data-search="hsinchu abm ai llm simulation data mar 2025"
+              data-tags="AI & LLM,simulation,Data">
+              <a class="project-cover-link" href="https://www.csltaipeitech.com/en/project/cityai-t-ai-1-rrnj3-lt8r7"
+                target="_blank" rel="noopener noreferrer" aria-label="Open Hsinchu ABM project in a new tab">
+                <img class="project-cover" src="assets/projects/hsinchu-abm-placeholder.png"
+                  alt="Hsinchu ABM project cover placeholder" />
+              </a>
+              <p class="project-tags">AI &amp; LLM · Simulation · Data</p>
+              <h3>Hsinchu ABM</h3>
+              <p class="project-desc">
+                Integrates faculty and student statistics from the University Affairs Information Disclosure Platform
+                with generative AI-driven virtual agents to simulate daily travel behaviors and develop a
+                human-centered traffic data analysis and decision support platform.
+              </p>
+              <p class="project-time">Mar, 2025</p>
+            </article>
+
+            <article class="project-card"
+              data-search="urban mobility simulator ai llm simulation apr 2024 urban transportation dynamics"
+              data-tags="AI & LLM,simulation">
+              <a class="project-cover-link"
+                href="https://www.csltaipeitech.com/en/project/urban-mobility-simulator" target="_blank"
+                rel="noopener noreferrer" aria-label="Open Urban Mobility Simulator project in a new tab">
+                <img class="project-cover" src="assets/projects/urban-mobility-simulator-placeholder.png"
+                  alt="Urban Mobility Simulator project cover placeholder" />
+              </a>
+              <p class="project-tags">AI &amp; LLM · Simulation</p>
+              <h3>Urban Mobility Simulator</h3>
+              <p class="project-desc">
+                Utilize urban open data and large language models to create virtual citizen profiles, enabling insights
+                into how individuals shape urban transportation dynamics.
+              </p>
+              <p class="project-time">Apr, 2024</p>
+            </article>
+
+            <article class="project-card"
+              data-search="insight navigator ai llm visualization apr 2024 citizen reports embedding search"
+              data-tags="AI & LLM,visualization">
+              <a class="project-cover-link" href="https://www.csltaipeitech.com/en/project/insight-navigator"
+                target="_blank" rel="noopener noreferrer" aria-label="Open Insight Navigator project in a new tab">
+                <img class="project-cover" src="assets/projects/insight-navigator-placeholder.png"
+                  alt="Insight Navigator project cover placeholder" />
+              </a>
+              <p class="project-tags">AI &amp; LLM · Visualization</p>
+              <h3>Insight Navigator</h3>
+              <p class="project-desc">
+                Leverage large language models and embedding search to analyze citizen reports, offering insights into
+                community concern and decision-making.
+              </p>
+              <p class="project-time">Apr, 2024</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
